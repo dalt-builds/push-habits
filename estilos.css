@@ -2,17 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
+body {
+    background-color: #252442;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .contenedor {
     display: flex;
     min-height: 100vh;
 }
 .barra {
-    display: block;
+    display: flex;
     padding: 10px;
     background-color: #f0f0f0;
-    min-height: 100vh;
+    height: 100vh;
     width: 200px;
     flex-direction: column;
 }
@@ -26,31 +31,97 @@
 }
 .opcion-barra {
     display: block;
-    padding: 5px 0px;
+    padding: 5px 3px;
     text-decoration: none;
     color: #333;
     font-size: 16px;
+    align-items: center;
+    gap: 6px;
 }
 .opcion-barra:hover {
     background-color: #e0e0e0;
     color: #000;
 }
+.footer-barra {
+    margin-top: auto;
+    padding: 20px 16px;
+    
+}
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+}
+.avatar {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(91, 115, 214);
+    border-radius: 50%;
+}
+.perfil-nombre {
+    font-size: 15px;
+}
+.perfil-habitos {
+    font-size: 11px;
+}
+
+/* .opcion-barra:active {
+    background-color: #e0e0e0;
+    color: #563a3a;
+} */
 
 /* Contenido principal */
+.contenido-principal {
+    flex: 1;
+}
 .encabezado {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-between; 
     align-items: center;
-    background: rgb(75, 86, 95);
+    background: rgb(7, 81, 141);
     padding: 20px;
-    /* text-align: center; */
 }
 .encabezado-der {
-    display: flex;
     align-items: center;
-
+    display: flex;
+    gap: 10px;
 }
+/* .encabezado-izq {
+    display: flex;
+} */
 .btn-nuevohabito {
     text-decoration: none;
     color:#000000;
+}
+
+/* Fila de estadisticas */
+.estadisticas-fila {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px
+
+}
+.estadisticas {
+    flex: 1;
+    padding: 30px;
+}
+
+.sub-titulo {
+    padding: 0 20px;
+
+}
+
+/* habitos */
+.lista-habitos {
+    cursor: pointer;
+}
+.fila-habito {
+    padding: 15px 30px;
 }

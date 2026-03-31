@@ -3,24 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Push habits</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div class="contenedor">
         
         <!-- Barra lateral -->
-        <asset class="barra">
+        <aside class="barra">
             <div class="encabezado-barra">
                 <span class="titulo-barra">Panel</span>
             </div>
             <div class="opciones-barra">
-                <a href="#" class="opcion-barra">Opción 1</a>
-                <a href="#" class="opcion-barra">Opción 2</a>
-                <a href="#" class="opcion-barra">Opción 3</a>
+                <a href="#" class="opcion-barra">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                    </svg>
+                    Hoy
+                </a>
+                <a href="#" class="opcion-barra">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                  Calendario
+                </a>
+                <a href="#" class="opcion-barra">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                  Estadísticas
+                </a>
+            </div>
+            <footer class="footer-barra">
+                <div class="perfil">
+                    <div class="avatar">DA</div>
+                    <div>
+                        <div class="perfil-nombre">Daniel</div>
+                        <div class="perfil-habitos"># Habitos activos</div>
+                    </div>
+                </div>
+                
+            </footer>
+        </aside>
 
-        </asset>
+        <!-- Contenido principal -->
+        <main class="contenido-principal">
 
+            <!-- Encabezado -->
+            <header class="encabezado">
+                <div class="encabezado-izq">
+                    <h4><strong>Bienvenido</strong></h4>
+                </div>
+                <div class="encabezado-der">
+                    <h5 id="fecha">Cargando...</h5>
+                    <a href="#" class="btn-nuevohabito">Nuevo Hábito</a>
+                </div>
+            </header>
+
+            <!-- Estadisticas de los habitos -->
+            <div class="estadisticas-fila">
+                <div class="estadisticas">
+                    <p>Completados hoy</p>
+                    <h3>3/5</h3>
+                    <p>60% del dia</p>
+                </div>
+                <div class="estadisticas">
+                    <p>Racha mas larga</p>
+                    <h3>14</h3>
+                    <p>Dias consecutivos</p>
+                </div>
+                <div class="estadisticas">
+                    <p>Este mes</p>
+                    <h3>87%</h3>
+                    <p>Tasa de completado</p>
+                </div>
+            </div>
+
+            <!-- Subtitulo del contenido -->
+            <div class="sub-titulo">Habitos de hoy</div>
+
+            <!-- Habitos -->
+            <section class="lista-habitos">
+                <div class="fila-habito">
+                    <div class="info-habito">
+                        <p class="nombre-habito">Habito</p>
+                        <p class="nombre-habito">salud . diario</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
