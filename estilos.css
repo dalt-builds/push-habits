@@ -96,7 +96,8 @@ body {
     display: flex;
 } */
 .btn-nuevohabito {
-    text-decoration: none;
+    background: none;
+    border: none;
     color:#000000;
 }
 
