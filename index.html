@@ -62,7 +62,28 @@
                 </div>
                 <div class="encabezado-der">
                     <h5 id="fecha">Cargando...</h5>
-                    <button href="#" class="btn-nuevohabito">Nuevo Hábito</button>
+
+                    <!-- Ventana emergente nuevo habito -->
+                    <button class="btn-nhabito" id="abrir-modal">+ Nuevo habito</button>
+                    <div class="modal-nhabito ocultar-modal">
+                        <div class="modal-contenido">
+                            <h3 class="titulo-modal">Nuevo hábito</h3>
+                            <label>Nombre</label>
+                            <input id="habito-input" type="text" placeholder="Añadir nuevo hábito">
+
+                            <label>Tipo</label>
+                            <select id="opcion-catehabitos" name="tipos-habitos">
+                                <option>Productividad</option>
+                                <option>Personal</option>
+                                <option>Salud</option>
+                            </select>
+                        
+                            <div class="acciones">
+                                <button id="guardar-habito" class="btn-guardar" onclick="guardar()">Guardar</button>
+                                <button id="cerrar-modal" class="btn-cancelar">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
             </header>
 
@@ -92,11 +113,8 @@
             <section class="lista-habitos">
                 <div class="fila-habito">
                     <div class="info-habito">
-                        <p class="nombre-habito">Habito</p>
-                        <p class="nombre-habito">salud . diario</p>
                     </div>
                 </div>
-
             </section>
         </main>
     </div>
